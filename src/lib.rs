@@ -1081,8 +1081,8 @@ pub enum Mailbox {
 /// Contains information about a frame enqueued for transmission via [`Can::transmit`] or
 /// [`Tx::transmit`].
 pub struct TransmitStatus {
-    dequeued_frame: Option<Frame>,
-    mailbox: Mailbox,
+    pub dequeued_frame: Option<Frame>,
+    pub mailbox: Mailbox,
 }
 
 impl TransmitStatus {
